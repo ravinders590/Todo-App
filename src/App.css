@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --bg:#34495e;
+  --w:#ffffff;
+  --font:'Jost', sans-serif;
+  --large:35px;
+}
+body,*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+section.todo-list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--bg);
+}
+
+.container {
+  max-width: 1200px;
+  flex: 0 0 1200px;
+  margin: auto;
+}
+.text-center{
+  text-align: center;
+}
+.w-color{
+  color: var(--w);
+}
+.large-font{
+  font-size: var(--large);
+}
+/* form */
+.todo-form {
+  background-color: #fff;
+  width: 30%;
+  margin: 15px auto;
+  padding: 20px;
+}
+.form-control {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 1px solid #333;
+  font-size: 15px;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  position: relative;
+}
+.btn-primary {
+  position: absolute;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+  padding: 7px 7px;
+  cursor: pointer;
+}
+
+.btn-primary svg {
+  background-color: transparent;
+  stroke: #2980b9;
+}
+.btn-primary:hover svg {
+  stroke: #3498db;
+}
+
+.all-todo {
+  width: 34%;
+  margin: auto;
+}
+
+.all-todo ul {
+  list-style: none;
+}
+
+.all-todo ul li {
+  background-color: #dfe6e9;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.all-todo ul li .list-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.btn > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.all-todo ul li .list-info > span:last-child {}
+
+.all-todo ul li .list-info > span:last-child .btn {
+  margin-right: 0;
+}
+
+.all-todo ul li .list-info > span:last-child .btn:first-child {
+  margin-left: 0;
+}
+
+.edit-items > svg {
+  stroke: #0984e3;
+}
+
+.delete-items > svg {
+  stroke: #d63031;
+}
+.btn.edit-items:hover  > svg{
+  stroke: #74b9ff;
+}
+.btn.delete-items:hover > svg{
+  stroke: #ff7675;
+}
+button.btn.edit-items.btn-primary {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
